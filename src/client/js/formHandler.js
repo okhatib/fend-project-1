@@ -5,7 +5,7 @@ function handleSubmit(event) {
     let formText = document.getElementById('name').value;
 
     Client.getApiKey()
-    .then(function(keyRes) {
+    .then(keyRes => {
         
         const formdata = new FormData();
         formdata.append("key", `${keyRes.key}`);
