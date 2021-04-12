@@ -19,8 +19,9 @@
         <main>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" placeholder="Text to analyze ..." required>
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <label for="txt_url">Full URL to analyze: </label>
+                    <input id="name" type="url" name="txt_url" placeholder="Url to analyze ..." required title="Enter the full url like: https://google.com">
+                    <input type="submit">
                 </form>
             </section>
 
